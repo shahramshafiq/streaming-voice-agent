@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voice Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main>
+        <h1>Voice Chatbot</h1>
+        <p class="hint">Use headphones for the best results. Without them the assistant can hear itself.</p>
+
+        <div class="controls">
+            <button id="toggle">Start conversation</button>
+            <span id="status" class="pill idle">Idle</span>
+        </div>
+
+        <p id="interim" class="interim"></p>
+        <p id="error" class="error" hidden></p>
+
+        <section class="panel">
+            <h2>Conversation</h2>
+            <div id="log"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Latency of the last reply</h2>
+            <p class="hint">All times are in milliseconds, measured from the moment the system decided you had finished speaking. A negative number means the work started earlier, while it was guessing ahead.</p>
+            <table id="metrics"><tbody><tr><td>No reply yet.</td></tr></tbody></table>
+            <p id="average" class="hint"></p>
+        </section>
+    </main>
+    <script src="/static/app.js"></script>
+</body>
+</html>
