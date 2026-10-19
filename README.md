@@ -71,8 +71,8 @@ static/
 ### Installation
 
 ```bash
-git clone https://github.com/shahramshafiq/voice-agent-stt-llm-tts.git
-cd voice-agent-stt-llm-tts
+git clone https://github.com/shahramshafiq/streaming-voice-agent.git
+cd streaming-voice-agent
 python -m venv .venv
 # Windows PowerShell
 .venv\Scripts\Activate.ps1
